@@ -1,0 +1,26 @@
+:root {
+  --bg-color: #FFFBCC;
+  --text-color: #6D4C41;
+  --accent-color: #A5D6A7;
+  --secondary-accent: #FFAB91;
+  --font-main: 'Patrick Hand', cursive;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
