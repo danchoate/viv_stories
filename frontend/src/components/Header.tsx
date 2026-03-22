@@ -5,7 +5,7 @@ const HeaderContainer = styled.header`
   background-color: var(--accent-color);
   padding: 1rem 2rem;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   border-radius: 15px 15px 255px 15px / 255px 15px 15px 225px;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
@@ -29,9 +29,17 @@ const NavLink = styled.a`
   transition: transform 0.2s;
 `;
 
+const Icon = styled.img`
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid white;
+`;
+
 const Header: React.FC = () => {
   return (
     <HeaderContainer>
+      <Icon src="/corgi_icon.png" alt="Corgi icon" />
       <Nav>
         <NavLink href="#">Home</NavLink>
         <NavLink href="#stories">Stories</NavLink>

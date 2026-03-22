@@ -110,6 +110,15 @@ const CloseButton = styled.button`
   color: white;
 `;
 
+const LargeIcon = styled.img`
+  width: 100px;
+  height: auto;
+  margin: 0 auto 1rem auto;
+  display: block;
+  border-radius: 50%;
+  border: 3px solid var(--secondary-accent);
+`;
+
 const StoryBody = styled.div`
   font-size: 1.2rem;
   line-height: 1.6;

@@ -21,15 +21,43 @@ const Text = styled.p`
   line-height: 1.6;
 `;
 
+const Content = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  text-align: left;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    text-align: center;
+  }
+`;
+
+const LargeIcon = styled.img`
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  border: 4px solid var(--accent-color);
+`;
+
+const TextContainer = styled.div`
+  flex: 1;
+`;
+
 const About: React.FC = () => {
   return (
     <AboutContainer>
       <Title>Welcome to My Story Corner!</Title>
-      <Text>
-        Hi! I'm Viv. I love reading and making up stories. 
-        This website is where I keep all my favorite adventures so I can share them with you. 
-        I hope you enjoy reading them as much as I enjoyed writing them!
-      </Text>
+      <Content>
+        <LargeIcon src="/corgi_icon.png" alt="Viv's Corgi Icon" />
+        <TextContainer>
+          <Text>
+            Hi! I'm Viv. I love reading and making up stories. 
+            This website is where I keep all my favorite adventures so I can share them with you. 
+            I hope you enjoy reading them as much as I enjoyed writing them!
+          </Text>
+        </TextContainer>
+      </Content>
     </AboutContainer>
   );
 };
